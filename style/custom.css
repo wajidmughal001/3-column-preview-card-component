@@ -1,0 +1,157 @@
+@import url('https://fonts.google.com/specimen/Lexend+Deca');
+@import url('https://fonts.google.com/specimen/Big+Shoulders+Display');
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  font-size: 30px; 
+  font-family: Lexend Deca;
+  color: white;
+}
+
+.flex-item-left {
+  background-color:darkorange;
+  padding: 10px;
+  flex: 33%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.flex-item-left>img{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.flex-item-left>h1{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.flex-item-left>p{
+  font-size:medium;
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: normal;
+}
+.flex-item-left>button{
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid white;
+  border-radius: 40px;
+  color:darkorange;
+}
+.flex-item-left>button:hover{
+  background: transparent;
+  border:2px solid white;
+  color:white;
+}
+.flex-item-center {
+  background-color:teal;
+  padding: 10px;
+  flex: 33%;
+}
+.flex-item-center>img{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.flex-item-center>h1{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.flex-item-center>p{
+  font-size:medium;
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: normal;
+}
+.flex-item-center>button{
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid white;
+  border-radius: 40px;
+  color:teal;
+}
+.flex-item-center>button:hover{
+  background: transparent;
+  border:2px solid white;
+  color:white;
+}
+.flex-item-right {
+  background-color:#004d4d;
+  padding: 10px;
+  flex: 33%;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.flex-item-right>img{
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.flex-item-right>h1{
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.flex-item-right>p{
+  font-size:medium;
+  margin: auto;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  line-height: normal;
+}
+.flex-item-right>button{
+  width: 80%;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: 1px solid white;
+  border-radius: 40px;
+  color:#004d4d;
+}
+.flex-item-right>button:hover{
+  background: transparent;
+  border:2px solid white;
+  color:white;
+}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 600px) {
+  .flex-container{
+    width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .flex-item-right, .flex-item-left ,.flex-item-center{
+    flex: 100%;
+  }
+  .flex-item-left {
+    background-color:darkorange;
+    padding: 10px;
+    flex: 33%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: unset;
+  }
+  .flex-item-right {
+    background-color:#004d4d;
+    padding: 10px;
+    flex: 33%;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
